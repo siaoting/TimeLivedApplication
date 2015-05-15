@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:text="@string/birthday"
+        android:textSize="@dimen/common_title_text_size"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/common_padding" />
+
+    <Button
+        android:id="@+id/birthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:text="@string/birthday_hint"
+        android:textSize="@dimen/common_title_text_size"
+        android:layout_marginBottom="@dimen/common_padding"
+        style="@style/Violet.Spinner" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:text="@string/gender"
+        android:textSize="@dimen/common_title_text_size"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/common_padding" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioGroup android:id="@+id/gender"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:layout_marginBottom="@dimen/common_padding" >
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:checked="true"
+                android:text="@string/male"
+                android:textSize="@dimen/common_title_text_size" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/female"
+                android:textSize="@dimen/common_title_text_size" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:text="@string/age"
+        android:textSize="@dimen/common_title_text_size"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/common_padding" />
+
+    <EditText android:id="@+id/expectancy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLength="3"
+        android:hint="@string/age_hint"
+        android:layout_marginBottom="@dimen/common_padding" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/common_btn_bg"
+        android:text="@string/submit"
+        android:textSize="@dimen/common_title_text_size"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="@dimen/common_padding" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/info_hint"
+        android:textSize="@dimen/common_subtitle_text_size" />
+
+</LinearLayout>

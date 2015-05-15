@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="violet">#B266FF</color>
+    <color name="dark_violet">#842DCE</color>
+
+    <color name="color_accent">@color/dark_violet</color>
+    <color name="color_primary">@color/dark_violet</color>
+
+    <color name="mdtp_accent_color">@color/violet</color>
+    <color name="mdtp_accent_color_dark">@color/dark_violet</color>
+
+</resources>
